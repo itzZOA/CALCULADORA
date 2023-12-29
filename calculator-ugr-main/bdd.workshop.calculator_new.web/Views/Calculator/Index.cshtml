@@ -1,0 +1,25 @@
+﻿@model bdd.workshop.calculator.web.Models.Calculator
+
+@{ 
+
+    ViewBag.Title = "Calculate!";
+}
+
+<h2>Do an Operation</h2>
+@using (Html.BeginForm("Operate","Calculator"))
+            {
+<fieldset>
+    <legend>Calculator</legend>
+
+    <div class="editor-field">
+        First Number: @Html.TextBoxFor(model => model.A);
+    </div>
+    <div class="editor-field">
+        Operator:@Html.TextBoxFor(model => model.Command);
+    </div>
+    <div class="editor-field">
+        Second Number: @Html.TextBoxFor(model => model.B);
+    </div>
+</fieldset>
+                <input type="submit" value="Do The operation"/>
+            }

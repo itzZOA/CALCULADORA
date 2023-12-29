@@ -1,0 +1,81 @@
+﻿@model bdd.workshop.calculator.web.Models.Calculator
+
+@{
+    ViewBag.Title = "Calculate!";
+}
+
+<h2>Do an Operation</h2>
+@using (Html.BeginForm("Operate", "Calculator", FormMethod.Post))
+{
+    <fieldset>
+        <input type="hidden" name="Input" id="hiddenInput" />
+        <div align="center">
+            <table>
+                <tr>
+                    <td> <input type="text" id="txtNumber" class="form-control" /> </td>
+                </tr>
+                <tr>
+                    <th>
+                        <input type="button" value="7" class="btn btn-primary" />
+                        <input type="button" value="8" class="btn btn-primary" />
+                        <input type="button" value="9" class="btn btn-primary" />
+                        <input type="button" value="x" class="btn btn-primary" />
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <input type="button" value="4" class="btn btn-primary" />
+                        <input type="button" value="5" class="btn btn-primary" />
+                        <input type="button" value="6" class="btn btn-primary" />
+                        <input type="button" value="-" class="btn btn-primary" />
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <input type="button" value="1" class="btn btn-primary" />
+                        <input type="button" value="2" class="btn btn-primary" />
+                        <input type="button" value="3" class="btn btn-primary" />
+                        <input type="button" value="+" class="btn btn-primary" />
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <input type="button" value="0" class="btn btn-primary" />
+                        <input type="button" value="/" class="btn btn-primary" />
+                        <input type="button" value="√" class="btn btn-primary" />
+                        <input type="button" value="=" class="btn btn-primary" />
+                    </th>
+                </tr>
+            </table>
+        </div>
+        <input type="submit" value="Do The Operation" style="display:none;" />
+    </fieldset>
+}
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var buttons = document.querySelectorAll('.btn');
+        buttons.forEach(function (button) {
+            button.addEventListener('click', function () {
+                var txtNumber = document.getElementById('txtNumber');
+                if (this.value !== '=') {
+                    txtNumber.value += this.value;
+                } else {
+                    document.getElementById('hiddenInput').value = txtNumber.value;
+                    txtNumber.form.submit();
+                }
+            });
+        });
+
+        document.getElementById('txtNumber').addEventListener('keydown', function (event) {
+            if (event.key === 'Enter' || event.key === '=' || event.keyCode === 187) {
+                event.preventDefault();
+                document.getElementById('hiddenInput').value = this.value;
+                this.form.submit();
+            } else if (event.key === 'Backspace') {
+                this.value = this.value.slice(0, -1);
+            }
+        });
+    });
+</script>
+

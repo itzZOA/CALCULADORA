@@ -1,0 +1,54 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bdd.workshop.calculator", "bdd.workshop.calculator\bdd.workshop.calculator.csproj", "{1C966E01-CE44-419E-A227-39E9797E84D1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bdd.workshop.calculator.console", "bdd.workshop.calculator.console\bdd.workshop.calculator.console.csproj", "{7838C9FC-12E0-44F8-A246-0DE3EEB29814}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bdd.workshop.calculator.web", "bdd.workshop.calculator.web\bdd.workshop.calculator.web.csproj", "{C694AF33-B7B3-4C90-9D9D-D17E8D930271}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{5BAE8444-7126-4270-98AD-16BE8663E5FF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bdd.workshop.calculator.tests.xunit", "bdd.workshop.calculator.tests.xunit\bdd.workshop.calculator.tests.xunit.csproj", "{C142C8F7-1CBA-40F6-A482-2EB97107966C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bdd.workshop.calculator.test.selenium", "bdd.workshop.calculator.test.selenium\bdd.workshop.calculator.test.selenium.csproj", "{71A81B66-BF17-423B-A1AC-7D4372E971CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1C966E01-CE44-419E-A227-39E9797E84D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C966E01-CE44-419E-A227-39E9797E84D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C966E01-CE44-419E-A227-39E9797E84D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C966E01-CE44-419E-A227-39E9797E84D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7838C9FC-12E0-44F8-A246-0DE3EEB29814}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7838C9FC-12E0-44F8-A246-0DE3EEB29814}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7838C9FC-12E0-44F8-A246-0DE3EEB29814}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7838C9FC-12E0-44F8-A246-0DE3EEB29814}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C694AF33-B7B3-4C90-9D9D-D17E8D930271}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C694AF33-B7B3-4C90-9D9D-D17E8D930271}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C694AF33-B7B3-4C90-9D9D-D17E8D930271}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C694AF33-B7B3-4C90-9D9D-D17E8D930271}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C142C8F7-1CBA-40F6-A482-2EB97107966C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C142C8F7-1CBA-40F6-A482-2EB97107966C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C142C8F7-1CBA-40F6-A482-2EB97107966C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C142C8F7-1CBA-40F6-A482-2EB97107966C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71A81B66-BF17-423B-A1AC-7D4372E971CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71A81B66-BF17-423B-A1AC-7D4372E971CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71A81B66-BF17-423B-A1AC-7D4372E971CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71A81B66-BF17-423B-A1AC-7D4372E971CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C142C8F7-1CBA-40F6-A482-2EB97107966C} = {5BAE8444-7126-4270-98AD-16BE8663E5FF}
+		{71A81B66-BF17-423B-A1AC-7D4372E971CD} = {5BAE8444-7126-4270-98AD-16BE8663E5FF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78105378-371B-4D41-9D8A-CCB6C6F2FF30}
+	EndGlobalSection
+EndGlobal

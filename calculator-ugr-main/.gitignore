@@ -1,0 +1,79 @@
+# Ignorar las carpetas bin y obj de todos los proyectos
+**/[Bb]in/
+**/[Oo]bj/
+
+# Ignorar otros archivos de compilación y binarios
+[Oo]ut/
+[Dd]ebug*/
+[Rr]elease*/
+x64/
+x86/
+build/
+bld/
+[Bb]uild[Ll]og.*
+*.[Pp]ublish.xml
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# Ignorar archivos relacionados con Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Ignorar archivos relacionados con NuGet
+packages/
+*.nupkg
+*.snupkg
+NuGet.config
+
+# Ignorar archivos de Respaldo
+*.[Bb]ak
+*.bak.*
+*.back
+*.backup
+*.tmp
+*.temp
+
+# Ignorar archivos y carpetas específicos del proyecto (personalizar según sea necesario)
+
+# Ignorar archivos generados por herramientas de análisis de código, pruebas, etc.
+TestResults/
+*.VisualState.xml
+coverage.opencover.xml
+coverage.cobertura.xml
+
+# Ignorar archivos de configuración local y secretos (puedes especificar archivos concretos si es necesario)
+appsettings.local.json
+appsettings.development.json
+secrets.json
+
+# Ignorar archivos específicos de macOS (si se utiliza)
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Ignorar archivos de Thumbnails de Windows
+Thumbs.db
+ehthumbs.db
+
+# Ignorar archivos de caché de imagen de iconos de Windows
+Icon?
+
+# Ignorar archivos de zona de archivos descargados de Windows
+*.Zone.Identifier
+
+# Ignorar Archivos de crash logs de Windows
+*.stackdump
+*.mdmp
+
+# Ignorar carpetas de NPM si se usa en el proyecto
+node_modules/
+
+# Ignorar archivos de entornos virtuales de Python si se usan
+venv/
+env/
+ENV/
